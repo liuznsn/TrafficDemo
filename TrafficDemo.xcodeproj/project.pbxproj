@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F9EEC9616C576E5AADDFBE4 /* Pods_TrafficDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012265F3AC270E55787C659A /* Pods_TrafficDemo.framework */; };
 		61B3BE701DC9CCEC008C9557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE6F1DC9CCEC008C9557 /* AppDelegate.swift */; };
 		61B3BE721DC9CCEC008C9557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE711DC9CCEC008C9557 /* ViewController.swift */; };
 		61B3BE751DC9CCEC008C9557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B3BE731DC9CCEC008C9557 /* Main.storyboard */; };
 		61B3BE771DC9CCEC008C9557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B3BE761DC9CCEC008C9557 /* Assets.xcassets */; };
 		61B3BE7A1DC9CCEC008C9557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B3BE781DC9CCEC008C9557 /* LaunchScreen.storyboard */; };
 		61B3BE851DC9CCEC008C9557 /* TrafficDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE841DC9CCEC008C9557 /* TrafficDemoTests.swift */; };
+		61B3BE901DC9DDFF008C9557 /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE8F1DC9DDFF008C9557 /* Flights.swift */; };
+		61B3BE921DC9E049008C9557 /* TrafficAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE911DC9E049008C9557 /* TrafficAPI.swift */; };
+		61B3BE941DC9E559008C9557 /* TrafficNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE931DC9E559008C9557 /* TrafficNetworkModel.swift */; };
+		F59CE2DA8BE1A3221B8B6D02 /* Pods_TrafficDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D7340F8EE2852EEFA2A830 /* Pods_TrafficDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012265F3AC270E55787C659A /* Pods_TrafficDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F1E1EE07E05CB3F10D87832 /* Pods-TrafficDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficDemo/Pods-TrafficDemo.release.xcconfig"; sourceTree = "<group>"; };
+		28AD4D1AE9C84D772D2013C8 /* Pods-TrafficDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficDemoTests/Pods-TrafficDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		61B3BE6C1DC9CCEC008C9557 /* TrafficDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B3BE6F1DC9CCEC008C9557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61B3BE711DC9CCEC008C9557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,12 @@
 		61B3BE801DC9CCEC008C9557 /* TrafficDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B3BE841DC9CCEC008C9557 /* TrafficDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficDemoTests.swift; sourceTree = "<group>"; };
 		61B3BE861DC9CCEC008C9557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B3BE8F1DC9DDFF008C9557 /* Flights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
+		61B3BE911DC9E049008C9557 /* TrafficAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficAPI.swift; sourceTree = "<group>"; };
+		61B3BE931DC9E559008C9557 /* TrafficNetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficNetworkModel.swift; sourceTree = "<group>"; };
+		8FACBBF9E3FFAEDAEA59EA1A /* Pods-TrafficDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficDemoTests/Pods-TrafficDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D7340F8EE2852EEFA2A830 /* Pods_TrafficDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44116A688BE4DB2291CFC51 /* Pods-TrafficDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficDemo/Pods-TrafficDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9EEC9616C576E5AADDFBE4 /* Pods_TrafficDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59CE2DA8BE1A3221B8B6D02 /* Pods_TrafficDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		056C8B7438C9A9DC1B3DD5C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E44116A688BE4DB2291CFC51 /* Pods-TrafficDemo.debug.xcconfig */,
+				0F1E1EE07E05CB3F10D87832 /* Pods-TrafficDemo.release.xcconfig */,
+				8FACBBF9E3FFAEDAEA59EA1A /* Pods-TrafficDemoTests.debug.xcconfig */,
+				28AD4D1AE9C84D772D2013C8 /* Pods-TrafficDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		61B3BE631DC9CCEC008C9557 = {
 			isa = PBXGroup;
 			children = (
 				61B3BE6E1DC9CCEC008C9557 /* TrafficDemo */,
 				61B3BE831DC9CCEC008C9557 /* TrafficDemoTests */,
 				61B3BE6D1DC9CCEC008C9557 /* Products */,
+				056C8B7438C9A9DC1B3DD5C8 /* Pods */,
+				E10D91302FD4B46C7B430D8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +112,9 @@
 				61B3BE761DC9CCEC008C9557 /* Assets.xcassets */,
 				61B3BE781DC9CCEC008C9557 /* LaunchScreen.storyboard */,
 				61B3BE7B1DC9CCEC008C9557 /* Info.plist */,
+				61B3BE8F1DC9DDFF008C9557 /* Flights.swift */,
+				61B3BE911DC9E049008C9557 /* TrafficAPI.swift */,
+				61B3BE931DC9E559008C9557 /* TrafficNetworkModel.swift */,
 			);
 			path = TrafficDemo;
 			sourceTree = "<group>";
@@ -96,6 +128,15 @@
 			path = TrafficDemoTests;
 			sourceTree = "<group>";
 		};
+		E10D91302FD4B46C7B430D8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012265F3AC270E55787C659A /* Pods_TrafficDemo.framework */,
+				D5D7340F8EE2852EEFA2A830 /* Pods_TrafficDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61B3BE891DC9CCEC008C9557 /* Build configuration list for PBXNativeTarget "TrafficDemo" */;
 			buildPhases = (
+				F79E813611FBCDDB74DAE539 /* [CP] Check Pods Manifest.lock */,
 				61B3BE681DC9CCEC008C9557 /* Sources */,
 				61B3BE691DC9CCEC008C9557 /* Frameworks */,
 				61B3BE6A1DC9CCEC008C9557 /* Resources */,
+				A765ABB9D969A81C6FA5F0FB /* [CP] Embed Pods Frameworks */,
+				2AD8B0C26B0EEBF2B81F1058 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61B3BE8C1DC9CCEC008C9557 /* Build configuration list for PBXNativeTarget "TrafficDemoTests" */;
 			buildPhases = (
+				A77317A6A97AD8F5E3E76B44 /* [CP] Check Pods Manifest.lock */,
 				61B3BE7C1DC9CCEC008C9557 /* Sources */,
 				61B3BE7D1DC9CCEC008C9557 /* Frameworks */,
 				61B3BE7E1DC9CCEC008C9557 /* Resources */,
+				67223876E6C90B5FC7650B6C /* [CP] Embed Pods Frameworks */,
+				357732277BE7EEE3B8893B29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,13 +243,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AD8B0C26B0EEBF2B81F1058 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrafficDemo/Pods-TrafficDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		357732277BE7EEE3B8893B29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrafficDemoTests/Pods-TrafficDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67223876E6C90B5FC7650B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrafficDemoTests/Pods-TrafficDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A765ABB9D969A81C6FA5F0FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrafficDemo/Pods-TrafficDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A77317A6A97AD8F5E3E76B44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F79E813611FBCDDB74DAE539 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		61B3BE681DC9CCEC008C9557 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B3BE921DC9E049008C9557 /* TrafficAPI.swift in Sources */,
 				61B3BE721DC9CCEC008C9557 /* ViewController.swift in Sources */,
+				61B3BE901DC9DDFF008C9557 /* Flights.swift in Sources */,
 				61B3BE701DC9CCEC008C9557 /* AppDelegate.swift in Sources */,
+				61B3BE941DC9E559008C9557 /* TrafficNetworkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,32 +480,37 @@
 		};
 		61B3BE8A1DC9CCEC008C9557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44116A688BE4DB2291CFC51 /* Pods-TrafficDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J66FQ7A4G5;
 				INFOPLIST_FILE = TrafficDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.TrafficDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		61B3BE8B1DC9CCEC008C9557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1E1EE07E05CB3F10D87832 /* Pods-TrafficDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J66FQ7A4G5;
 				INFOPLIST_FILE = TrafficDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.TrafficDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
 		61B3BE8D1DC9CCEC008C9557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FACBBF9E3FFAEDAEA59EA1A /* Pods-TrafficDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,6 +526,7 @@
 		};
 		61B3BE8E1DC9CCEC008C9557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AD4D1AE9C84D772D2013C8 /* Pods-TrafficDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +559,7 @@
 				61B3BE8B1DC9CCEC008C9557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61B3BE8C1DC9CCEC008C9557 /* Build configuration list for PBXNativeTarget "TrafficDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +568,7 @@
 				61B3BE8E1DC9CCEC008C9557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
