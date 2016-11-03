@@ -10,6 +10,48 @@ import Foundation
 import Moya
 
 
+private func JSONResponseDataFormatter(data: NSData) -> NSData {
+    do {
+        let dataAsJSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+        let prettyData =  try NSJSONSerialization.dataWithJSONObject(dataAsJSON, options: .PrettyPrinted)
+        return prettyData
+    } catch {
+        return data //fallback to original data if it cant be serialized
+    }
+}
+
+let requestClosure = { (endpoint: Endpoint<Traffic>, done: MoyaProvider.RequestResultClosure) in
+    let request = endpoint.urlRequest.mutableCopy() as! NSMutableURLRequest
+    done(.Success(request))
+}
+
+let endpointClosure = { (target:Traffic) -> Endpoint<Traffic> in
+    let url = target.baseURL.URLByAppendingPathComponent(target.path)!.absoluteString
+    var httpHeaderFields:[String: String]? = nil
+    
+    /*
+    switch target {
+    
+    case .FetchFlights(): break
+    
+    default:
+    
+    }
+    */
+    
+    return Endpoint(URL: url!, sampleResponseClosure: {.NetworkResponse(200, target.sampleData)}, method: target.method, parameters: target.parameters, parameterEncoding:.JSON, httpHeaderFields: httpHeaderFields)
+}
+
+
+let trafficProvider = MoyaProvider<Traffic>(
+    plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)],
+    requestClosure:requestClosure,
+    endpointClosure:endpointClosure
+)
+
+
+
+
 private extension String {
     var URLEscapedString: String {
         return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!

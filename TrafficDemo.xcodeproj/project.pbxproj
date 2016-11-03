@@ -17,6 +17,7 @@
 		61B3BE901DC9DDFF008C9557 /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE8F1DC9DDFF008C9557 /* Flights.swift */; };
 		61B3BE921DC9E049008C9557 /* TrafficAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE911DC9E049008C9557 /* TrafficAPI.swift */; };
 		61B3BE941DC9E559008C9557 /* TrafficNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B3BE931DC9E559008C9557 /* TrafficNetworkModel.swift */; };
+		9E9B9F091DCA33DC00483F08 /* TrafficTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9F081DCA33DC00483F08 /* TrafficTableViewController.swift */; };
 		F59CE2DA8BE1A3221B8B6D02 /* Pods_TrafficDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D7340F8EE2852EEFA2A830 /* Pods_TrafficDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		61B3BE911DC9E049008C9557 /* TrafficAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficAPI.swift; sourceTree = "<group>"; };
 		61B3BE931DC9E559008C9557 /* TrafficNetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficNetworkModel.swift; sourceTree = "<group>"; };
 		8FACBBF9E3FFAEDAEA59EA1A /* Pods-TrafficDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficDemoTests/Pods-TrafficDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E9B9F081DCA33DC00483F08 /* TrafficTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficTableViewController.swift; sourceTree = "<group>"; };
 		D5D7340F8EE2852EEFA2A830 /* Pods_TrafficDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44116A688BE4DB2291CFC51 /* Pods-TrafficDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficDemo/Pods-TrafficDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				61B3BE8F1DC9DDFF008C9557 /* Flights.swift */,
 				61B3BE911DC9E049008C9557 /* TrafficAPI.swift */,
 				61B3BE931DC9E559008C9557 /* TrafficNetworkModel.swift */,
+				9E9B9F081DCA33DC00483F08 /* TrafficTableViewController.swift */,
 			);
 			path = TrafficDemo;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				61B3BE721DC9CCEC008C9557 /* ViewController.swift in Sources */,
 				61B3BE901DC9DDFF008C9557 /* Flights.swift in Sources */,
 				61B3BE701DC9CCEC008C9557 /* AppDelegate.swift in Sources */,
+				9E9B9F091DCA33DC00483F08 /* TrafficTableViewController.swift in Sources */,
 				61B3BE941DC9E559008C9557 /* TrafficNetworkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

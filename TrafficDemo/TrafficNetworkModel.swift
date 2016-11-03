@@ -16,6 +16,7 @@ import RxSwift
 
 class TrafficNetworkModel {
     
+    let refreshTrigger = PublishSubject<Void>()
     let provider: RxMoyaProvider<Traffic>
     var flightElements = Variable<[Flights]>([])
     let loading = Variable<Bool>(false)
@@ -26,6 +27,7 @@ class TrafficNetworkModel {
         self.provider = provider
      
         let refreshRequest = loading.asObservable()
+            .sample(refreshTrigger)
             .flatMap { loading -> Observable<[Flights]> in
                 if loading {
                     return Observable.empty()
@@ -38,6 +40,9 @@ class TrafficNetworkModel {
             .of(refreshRequest)
             .shareReplay(1)
 
+        refreshRequest
+        
+        
         Observable
             .of(request.map { _ in false })
             .merge()
@@ -46,6 +51,7 @@ class TrafficNetworkModel {
 
         request.subscribeNext { (flights) in
             flights.subscribeNext({ (flights) in
+                dump(flights)
                 self.flightElements = Variable.init(flights)
             }).dispose()
         }.addDisposableTo(disposeBag)
@@ -55,10 +61,10 @@ class TrafficNetworkModel {
     }
     
     
-    func fetchFlights() -> Observable<[Flights]?> {
+    func fetchFlights() -> Observable<[Flights]?> {        
        return self.provider
         .request(Traffic.FetchFlights())
         .debug()
-        .mapArrayOptional(Flights.self, keyPath: "items")
+        .mapArrayOptional(Flights.self)
     }
 }

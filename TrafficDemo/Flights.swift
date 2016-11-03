@@ -19,12 +19,12 @@ struct Flights : Mappable{
     
     
     init(map: Mapper) throws {
-        try arrivalTime = map.from("arrivalTime")
-        try departureTime = map.from("departureTime")
+        try arrivalTime = map.from("arrival_time")
+        try departureTime = map.from("departure_time")
         try id = map.from("id")
-        try numberOfStops = map.from("numberOfStops")
-        try priceInEuros = map.from("priceInEuros")
-        try providerLogo = map.from("providerLogo")
+        try numberOfStops = map.from("number_of_stops")
+        try priceInEuros = map.from("price_in_euros")
+        try providerLogo = map.from("provider_logo")
     }
     
 }
