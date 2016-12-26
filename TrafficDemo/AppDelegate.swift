@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication,didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.window?.rootViewController = UINavigationController(rootViewController: TrafficTableViewController())
+        let mainPageViewController = MainPageViewController()
+        mainPageViewController.viewControllers = [TrafficTableViewController(),TrafficTableViewController(),TrafficTableViewController()]
+        self.window?.rootViewController = UINavigationController(rootViewController: mainPageViewController)
         
         return true
     }

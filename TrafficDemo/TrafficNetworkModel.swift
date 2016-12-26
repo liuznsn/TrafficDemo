@@ -12,20 +12,21 @@ import Mapper
 import Moya_ModelMapper
 import RxOptional
 import RxSwift
-
+import RxCocoa
 
 class TrafficNetworkModel {
     
     let refreshTrigger = PublishSubject<Void>()
     let provider: RxMoyaProvider<Traffic>
-    var flightElements = Variable<[Flights]>([])
+    let loadNextPageTrigger = PublishSubject<Void>()
+    var flightElements: Variable<[Flights]>
     let loading = Variable<Bool>(false)
-
     private let disposeBag = DisposeBag()
 
     init(provider:RxMoyaProvider<Traffic>) {
         self.provider = provider
-     
+        self.flightElements = Variable<[Flights]>([])
+        
         let refreshRequest = loading.asObservable()
             .sample(refreshTrigger)
             .flatMap { loading -> Observable<[Flights]> in
@@ -35,13 +36,22 @@ class TrafficNetworkModel {
                     return self.fetchFlights().filterNil()
                 }
         }
-      
-        let request = Observable
-            .of(refreshRequest)
-            .shareReplay(1)
-
-        refreshRequest
+       
+        let nextPageRequest = loading.asObservable()
+            .sample(loadNextPageTrigger)
+            .flatMap { loading -> Observable<[Flights]> in
+                if loading {
+                    return Observable.empty()
+                } else {
+                    return self.fetchFlights().filterNil()
+                }
+        }
         
+        let request = Observable
+            .of(refreshRequest, nextPageRequest)
+            .merge()
+            .shareReplay(1)
+    
         
         Observable
             .of(request.map { _ in false })
@@ -49,13 +59,12 @@ class TrafficNetworkModel {
             .bindTo(loading)
             .addDisposableTo(disposeBag)
 
-        request.subscribeNext { (flights) in
-            flights.subscribeNext({ (flights) in
-                dump(flights)
-                self.flightElements = Variable.init(flights)
-            }).dispose()
-        }.addDisposableTo(disposeBag)
         
+        request.subscribeNext { flights in
+          flights.toObservable().subscribeNext({ flights in
+            self.flightElements.value.append(flights)
+          }).dispose()
+        }.addDisposableTo(disposeBag)
         
     
     }
